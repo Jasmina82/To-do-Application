@@ -1,4 +1,4 @@
- // these line of code - copied from https://jsfiddle.net/cowboy/hHZa9/
+ // this line of code - copied from https://jsfiddle.net/cowboy/hHZa9/
  var tasksFromTable = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
 
  $('#btnExport').append($('<a href="data:' + tasksFromTable + '" download="data.json">Download</a>'));
