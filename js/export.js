@@ -1,30 +1,14 @@
- //code copied from https://jsfiddle.net/cowboy/hHZa9/
-
+ // these line of code - copied from https://jsfiddle.net/cowboy/hHZa9/
  var tasksFromTable = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
 
  $('#btnExport').append($('<a href="data:' + tasksFromTable + '" download="data.json">Download</a>'));
 
- /*
-
- var link = $('<a>').text("Download");
-
- link.on('click', function(ev) {
-     link.attr("href",tasksFromTable);
-     link.attr("download","data.json");
- }, false);
-
- $("#btnExport").append(link);
-
-
-
- */
 
  //event on input (type file),import file
  $("#btnImport").on('click', function () {
 
  	$("#file").trigger("click");
  });
-
 
 
  $("#file").on('change', function () {
